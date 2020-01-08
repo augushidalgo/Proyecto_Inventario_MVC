@@ -45,8 +45,8 @@ namespace Proyecto_Inventario_MVC.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Required(ErrorMessage ="El campo de Email es requerido")]
-            [EmailAddress]
+            [Required(ErrorMessage ="El campo de Email es requerido.")]
+            [EmailAddress(ErrorMessage = "El campo de Email no es una dirección de correo válido.")]
             [Display(Name = "Email")]
             public string Email { get; set; }
 
